@@ -7,7 +7,7 @@ const MAX_BIO = 160;
 
 // Letters from any language, combining marks, spaces, apostrophes, periods and hyphens.
 const NAME_PATTERN = /^[\p{L}\p{M}' .-]+$/u;
-const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const EMAIL_PATTERN = /^[^\s@]+@(?:[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?\.)+[A-Za-z]{2,}$/;
 
 const FIELDS = ["name", "email", "age", "pronouns", "bio"];
 
